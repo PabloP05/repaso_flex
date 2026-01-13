@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
 }
+
+/* ESTRUCTURA DEL LAYOUT  */
 body{
     margin: 0 auto;
     background-color: bisque;
@@ -11,17 +13,17 @@ body{
 
 header{
     width: 1500px;
-    height: 10vh;
+    height: 15vh;
     background-color: aliceblue;
-    justify-items: center;
+    justify-content: space-between;
     align-content: center;
-}
+    display: flex;
 
-nav{
+    nav{
     width: 1300px;
     height: 50px;
-    background-color: aliceblue;
-    margin: 30px auto;
+    background-color: rgb(29, 146, 249);
+    margin: 0 auto;
     align-content: center;
     div{
         width: 300px;
@@ -41,14 +43,27 @@ nav{
     }
 }
 
+    .ft{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: blue;
+    }
+}
+
+
+
+
+/* FORMATO DE CAJAS FLEXADAS */
 .flexada{
     display: flex;
     gap: 50px;
     
     div{
-        display: flex;
-        flex-grow: 1;
-        flex-shrink: 2;
+        display: flex; /* convertimos cada div a caja flexible */
+        flex-grow: 1; /* indicamos que las cajas ocupen el espacio total del contenedor si sobra */
+        flex-shrink: 2; /* le indicamos que las cajas pierdan espacio si hace falta una caja nueva */
         margin: 0;
         flex-basis: 300px;
         a{
