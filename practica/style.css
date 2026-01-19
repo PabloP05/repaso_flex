@@ -65,10 +65,14 @@ header{
         flex-grow: 1; /* indicamos que las cajas ocupen el espacio total del contenedor si sobra */
         flex-shrink: 2; /* le indicamos que las cajas pierdan espacio si hace falta una caja nueva */
         margin: 0;
-        flex-basis: 300px;
+        flex-basis: 280px;
+        padding-left: 20px;
         a{
             display: flex; /* asi el enlace ocupa todo  */
         }
+    }
+    #creceMas{
+        flex-grow: 3;
     }
 }
 
