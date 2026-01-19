@@ -72,7 +72,7 @@ header{
         }
     }
     #creceMas{
-        flex-grow: 3;
+        flex-grow: 3; /* indico que el boton de inicio de sesion debe crecer más en la página 1  */
     }
 }
 
